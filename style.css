@@ -1,0 +1,483 @@
+
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #263238;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section {
+    padding: 55px 8%;
+}
+
+.section h2 {
+    text-align: center;
+    color: #123b67;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/* NAVIGATION BAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: #102d4f;
+    color: white;
+}
+
+.logo {
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #45c4d8;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 28px;
+}
+
+.navbar nav a {
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #45c4d8;
+}
+
+.menu-btn {
+    display: none;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* HOME PAGE */
+
+.hero {
+    min-height: 490px;
+    padding: 65px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    background: linear-gradient(120deg, #e6f3ff, #ffffff);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.welcome {
+    color: #1688a6;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: #102d4f;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #1688a6;
+}
+
+.hero h2 {
+    font-size: 23px;
+    color: #405b76;
+    margin-bottom: 18px;
+}
+
+.hero-content > p:not(.welcome) {
+    max-width: 580px;
+    color: #52616f;
+}
+
+/* CIRCULAR HOME PROFILE PHOTO */
+
+.profile-frame {
+    width: 245px;
+    height: 245px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 7px solid white;
+    outline: 4px solid #1688a6;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+}
+
+.profile-frame img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* BUTTONS */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 11px 22px;
+    background: #123b67;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1688a6;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #123b67;
+    color: #123b67;
+}
+
+.btn-outline:hover {
+    color: white;
+}
+
+/* ABOUT SECTION */
+
+.about {
+    background: white;
+    text-align: center;
+}
+
+.about p {
+    max-width: 850px;
+    margin: auto;
+    color: #596875;
+}
+
+/* HOME PAGE CARDS */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.info-card {
+    padding: 28px;
+    background: white;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-bottom: 4px solid #1688a6;
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-6px);
+}
+
+.info-card h3 {
+    color: #123b67;
+    margin-bottom: 12px;
+}
+
+/* RESUME AND BIO-DATA PAGES */
+
+.document-page {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 25px;
+    border-bottom: 3px solid #1688a6;
+}
+
+.resume-header h1 {
+    color: #123b67;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.resume-header h3 {
+    color: #1688a6;
+    margin-bottom: 10px;
+}
+
+.resume-header p {
+    color: #52616f;
+    font-size: 14px;
+}
+
+/* CIRCULAR RESUME PHOTO */
+
+.resume-photo {
+    width: 155px;
+    height: 155px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 5px solid #e6f3ff;
+    outline: 3px solid #1688a6;
+}
+
+/* SECTION STYLING */
+
+.resume-section {
+    margin-top: 28px;
+}
+
+.resume-section h2 {
+    color: #123b67;
+    font-size: 21px;
+    border-left: 5px solid #1688a6;
+    padding-left: 12px;
+    margin-bottom: 15px;
+}
+
+.resume-section p,
+.resume-section li {
+    color: #4c5b68;
+}
+
+.resume-section ul {
+    padding-left: 25px;
+}
+
+/* TABLE STYLING */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+th,
+td {
+    border: 1px solid #d6e0e8;
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background: #123b67;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f1f6fa;
+}
+
+/* BIO-DATA PAGE */
+
+.page-heading {
+    text-align: center;
+    color: #123b67;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+/* CIRCULAR BIO-DATA PHOTO */
+
+.biodata-profile {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 35px;
+}
+
+.biodata-profile img {
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 5px solid white;
+    outline: 3px solid #1688a6;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+}
+
+.biodata-table th {
+    width: 30%;
+}
+
+/* PRINT BUTTON */
+
+.print-btn {
+    display: block;
+    margin: 35px auto 0;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    background: #123b67;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.print-btn:hover {
+    background: #1688a6;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #102d4f;
+    color: white;
+    margin-top: 35px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        padding-top: 20px;
+    }
+
+    .navbar nav.show {
+        display: flex;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 45px 6%;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .profile-frame {
+        width: 190px;
+        height: 190px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .document-page {
+        margin: 15px;
+        padding: 22px;
+    }
+
+    .resume-header {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .resume-photo {
+        width: 135px;
+        height: 135px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
+/* PRINT SETTINGS */
+
+@media print {
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    .navbar,
+    footer,
+    .print-btn,
+    .menu-btn {
+        display: none !important;
+    }
+
+    .document-page {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 15px;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .resume-section,
+    tr {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .resume-photo,
+    .biodata-profile img {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+}
